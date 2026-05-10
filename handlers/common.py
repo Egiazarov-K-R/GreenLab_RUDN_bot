@@ -7,9 +7,9 @@ from aiogram.filters import CommandStart
 from aiogram import Router, types, Bot, F
 from aiogram.fsm.context import FSMContext
 from Fsm.becoming_member import MemberState
+from aiogram.types import LinkPreviewOptions
 from keyboards.replyk import get_join_nso_keyboard 
-from aiogram.utils.keyboard import InlineKeyboardBuilder, ReplyKeyboardBuilder 
-from keyboards.inlinek import get_language_keyboard, get_departments_keyboard, get_organizer_keyboard, get_dept_action_keyboard
+from keyboards.inlinek import get_language_keyboard, get_departments_keyboard, get_dept_action_keyboard
 
 # Создаем роутер для общих хендлеров
 router = Router()
@@ -50,8 +50,10 @@ async def select_language(callback: types.CallbackQuery, state: FSMContext, bot:
     # 4. Редактируем старое сообщение или отправляем новое
     if callback.message:
         await callback.message.answer(
-        text=welcome_text,
-        reply_markup=reply_markup
+        text=welcome_text, 
+        reply_markup=reply_markup,
+        parse_mode='HTML',
+        link_preview_options=LinkPreviewOptions(is_disabled=True) # <-- ОТКЛЮЧАЕТ ПРЕДПРОСМОТР
     )
     await state.set_state(None) 
     # Убираем часики на кнопке

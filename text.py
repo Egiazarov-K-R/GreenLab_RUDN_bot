@@ -23,7 +23,7 @@ TEXTS = {
     'ru': {
         # --- Общие тексты ---
         'welcome_message_lang':'Выберите язык\nSelect a language',
-        'welcome_message': 'Здравствуйте, это бот НСО Гринлаба РУДН!🌱\n Давайте начнем?',
+        'welcome_message': 'Здравствуйте, это бот НСО Гринлаба РУДН!🌱\n Давайте начнем?\n\nИспользуя бота, вы соглашаетесь с <a href="https://telegra.ph/Politika-obrabotki-personalnyh-dannyh--Privacy-Policy-05-10">политикой обработки персональных данных</a>',
         'error_message': 'Произошла ошибка. Пожалуйста, попробуйте позже.',
         'admin_notification_new_application': '📝 Новая заявка от пользователя:\n'
                                               'ID: {user_id}\n'
@@ -118,7 +118,7 @@ TEXTS = {
         # --- General Texts ---
         'join_nso_button': 'Join NSO',
         'error_message': 'An error occurred. Please try again later.',
-        'welcome_message': 'Hello, this is the RUDN GreenLab NSO bot!🌱\n Shall we get started?',
+        'welcome_message': 'Hello, this is the RUDN GreenLab NSO bot!🌱\n Shall we get started?\n\nBy using this bot, you agree to the <a href="https://telegra.ph/Politika-obrabotki-personalnyh-dannyh--Privacy-Policy-05-10">privacy policy</a>',
         'application_created': 'Thank you! It’s a pleasure to meet you! You’re now part of our community!🫂\n One of our representatives will be in touch shortly to discuss the next steps, but in the meantime, why not take a look at what we have to offer?',
         'already_applied': "ou have already submitted your application. If you wish to change your selection, please contact the person in charge\n\n@sasha_erbaeva",
         'too_many_registrations': 'You have already submitted the form the maximum number of times allowed',
@@ -207,7 +207,7 @@ TEXTS = {
     # ---основной ---
     'join_nso_button': 'Adhérer à la NSO',
     'error_message': "Une erreur s'est produite. Veuillez réessayer plus tard.",
-    'welcome_message': 'Bonjour, ici le bot NSO de Greenlab RUDN!🌱\n On commence?',
+    'welcome_message': 'Bonjour, ici le bot NSO de Greenlab RUDN!🌱\n On commence?\n\nEn utilisant ce bot, vous acceptez la <a href="https://telegra.ph/Politika-obrabotki-personalnyh-dannyh--Privacy-Policy-05-10">politique de confidentialité</a>',
     'application_created': "Merci! Ravis de faire votre connaissance! Vous faites désormais partie de notre communauté!🫂\n Notre responsable vous contactera prochainement pour coordonner nos actions. En attendant, n'hésitez pas à découvrir nos services!",
     'already_applied' : "Vous avez déjà déposé votre candidature. Si vous souhaitez modifier votre choix, veuillez contacter le responsable\n\n@sasha_erbaeva",
     "too_many_registrations" : "Vous avez déjà rempli le formulaire autant de fois que possible",
